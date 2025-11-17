@@ -1,0 +1,17 @@
+# Build artifacts
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio
+*.vcxproj*
+*.sdf
+*.VC.db
+*.user
+*.opensdf
+
+# VSCode
+.vscode/.browse.VC.db
+.vscode/.browse* 

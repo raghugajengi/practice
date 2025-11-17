@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch (Windows) - cppvsdbg",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/src/cpp_practice.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Launch (Windows) - cppdbg",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/src/cpp_practice.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "console": "integratedTerminal"
+    }
+  ]
+}
