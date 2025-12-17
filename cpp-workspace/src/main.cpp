@@ -66,7 +66,7 @@ struct UTtr {
     {}
 
     // Fallback for runtime strings
-    UTtr(int msg_limit, double in_time_interval, const char *label)
+    UTtr(int msg_limit, double in_time_interval, const char *label) 
         : msg_limit(msg_limit),
           time_interval(in_time_interval),
           label(label),
@@ -147,7 +147,7 @@ void example(const char* str, int) {
     }
 }
 
-int main() {
+/*int main() {
     int a =10;
 
     u_tr(T_info, "NK: 66 [Thread %s] Processing removal ",
@@ -156,4 +156,4 @@ int main() {
     example("NK: 66 [Thread %s] Processing removal " , a); // creates static UTtr ttr
     
     return 0;
-}
+}*/
