@@ -1,0 +1,28 @@
+// ...
+
+/**
+ * @brief On-wire representation of the ltfTraceRecordEnable request type.
+ */
+message LtfTraceRecordEnableRequest {
+    string file_path = 1;
+    float sampling_rate = 2;
+    int32 duration_seconds = 3;
+}
+
+/**
+ * @brief On-wire representation of the ltfTraceRecordEnable response type.
+ */
+message LtfTraceRecordEnableResponse {
+    moyo_server.MoyoStatus status = 1;
+    string error_message = 2;
+}
+
+/**
+ * @brief Moyo service for recording traces.
+ */
+service MoyoRecordTraces {
+    /**
+     * @brief Enable file-based trace recording.
+     */
+    rpc ltfTraceRecordEnable (LtfTraceRecordEnableRequest) returns (LtfTraceRecordEnableResponse);
+}
